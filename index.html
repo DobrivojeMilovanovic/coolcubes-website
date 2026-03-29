@@ -52,34 +52,6 @@ body {
 }
 
 /* ── LANGUAGE TOGGLE ── */
-.top-nav {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 1000;
-  display: flex;
-  gap: 6px;
-}
-.top-nav a {
-  padding: 8px 18px;
-  border-radius: 24px;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #fff;
-  background: rgba(0,119,182,0.7);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  border: 2px solid rgba(255,255,255,0.3);
-  transition: background 0.3s, transform 0.2s;
-}
-.top-nav a:hover {
-  background: rgba(0,119,182,1);
-  transform: translateY(-2px);
-}
-
 .lang-toggle {
   position: fixed;
   top: 16px;
@@ -663,8 +635,6 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  .top-nav { top: 10px; left: 10px; gap: 4px; }
-  .top-nav a { padding: 6px 10px; font-size: 11px; letter-spacing: 0.5px; }
   .steps-grid { grid-template-columns: 1fr; gap: 40px; }
   .why-grid { grid-template-columns: 1fr; }
   .uses-grid { grid-template-columns: 1fr; }
@@ -723,14 +693,6 @@ body.lang-en .night-text div[data-lang-sr] { display: none; }
 </style>
 </head>
 <body>
-
-<!-- TOP NAV LINKS -->
-<div class="top-nav">
-  <a href="#locations" data-lang-sr>Lokacije</a>
-  <a href="#locations" data-lang-en>Locations</a>
-  <a href="#how" data-lang-sr>Kako funkcioniše</a>
-  <a href="#how" data-lang-en>How it works</a>
-</div>
 
 <!-- LANGUAGE TOGGLE -->
 <div class="lang-toggle">
